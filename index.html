@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+ <div class=" container">
+    <h1 class=" text-muted fw-bold my-5 fs-3 ">BOOKMARKER</h1>
+    <div class="border-bottom border-top border-dark">
+        <div class=" bg-light p-5 m-5  text-center">
+            <h2>Bookmark your favorite sites</h2>
+            <label for="name" class=" form-label"> site name:</label>
+            <input type="text" class=" form-control" id="name" placeholder="website name">
+            <div id="warringname" class="bg-danger text-center text-white m-3"></div>
+            <label for="url" class=" form-label"> site url:</label>
+            <input type="text" class="form-control" id="url" placeholder="website url">
+            <div id="warringurl" class="bg-danger text-center text-white m-3"></div>
+            <button type="submit" class="btn btn-warning mt-5" onclick="AddWebsite()" id="togellbtn">submit</button>
+        </div>
+    </div>
+    <input type="text" class=" form-control mt-5" placeholder=" search" id="search" onkeyup="search()">
+   <div class=" bg-light ">
+   <div class="row">
+    <div  class="table-responsive-sm">
+        <table class=" table table-striped table-light  my-5">
+            <tbody id="tablebody">
+            </tbody>
+        </table>
+    </div>
+   </div>
+   </div>
+ </div>
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
